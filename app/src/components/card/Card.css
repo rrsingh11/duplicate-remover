@@ -1,0 +1,32 @@
+.card {
+    border: 1px solid #ccc;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    width: 7rem;
+    position: relative;
+    border-radius: .7rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.card button {
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-family: var(--card-font);
+    color: rgba(255, 0, 0, 0.934);
+}
+
+
+.card p {
+    font-size: 1.6rem;
+    font-family: var(--card-font);
+    font-weight: 700;
+}

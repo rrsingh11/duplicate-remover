@@ -1,0 +1,87 @@
+.home{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    position: relative;
+}
+
+input {
+    font-size: 1.6rem;
+    font-family: var(--card-font);
+    font-weight: 700;
+}
+.home--heading {
+    font-size: 4rem;
+    animation-name: slide;
+    animation-duration: 2s;
+    transition: ease-in-out;
+}
+
+.home--input {
+    height: 4rem;
+    width: 100%;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 20px;
+    animation-name: slide-opposite;
+    animation-duration: 2s;
+    transition: ease-in-out;
+}
+
+.home--submit {
+    height: 4rem;
+    width: 100%;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    animation-name: slide-opposite;
+    animation-duration: 2s;
+    transition: ease-in-out;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes slide-opposite{
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@media (min-width: 768px) {
+    .home--heading {
+        font-size: 6rem;
+    }
+
+    form {
+        display: flex;
+        gap: 2rem;
+    }
+    .home--input{
+        width: 400px;
+    }
+    .home--submit{
+        width: 100px;
+    }
+}
+
